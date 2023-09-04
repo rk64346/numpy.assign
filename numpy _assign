@@ -1,0 +1,454 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3c370e0e-b84e-4843-84b2-44a0cae9747d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "v_list = [ '1' , '2' , '3' , '4' , '5' ]\n",
+    "array_list = np.array(object = v_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d7fed05e-da4b-4e2f-8ea6-74a85f8fda8e",
+   "metadata": {},
+   "source": [
+    "Q1. Is there any difference in the data type of variables list_ and array_list? If there is then write a code\n",
+    "to print the data types of both the variables."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "67b58ec1-ed0e-4b93-a03c-2788b3016f13",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array(['1', '2', '3', '4', '5'], dtype='<U1')"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.array(v_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "59329129-13ec-48c8-bee3-d1d2fb399749",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array(['1', '2', '3', '4', '5'], dtype='<U1')"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.array(array_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "85afb025-959d-4aa8-a1aa-b8f80ec93377",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['1', '2', '3', '4', '5']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "90b994b7-b1e1-45ed-9eaa-118400d6ae70",
+   "metadata": {},
+   "source": [
+    "Q2. Write a code to print the data type of each and every element of both the variables list_ and\n",
+    "arra_list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9da236ed-5ef1-4d3c-8b78-c91e5bf84725",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "arr = array_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "db206368-960a-44d9-bde1-c8d7b7b98368",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('<U1')"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "310cb678-a429-4497-ba37-05f7b7beacb7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " arr1 = v_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "201ad333-eeb0-422b-aa59-177456faf35d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['1', '2', '3', '4', '5']"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(arr1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "0a4ceae7-1f83-4069-9aea-af4569b93e6a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['1', '2', '3', '4', '5']"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(arr)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "13c16005-cf96-466a-a789-e36049c872f0",
+   "metadata": {},
+   "source": [
+    "Q3. Considering the following changes in the variable, array_list:\n",
+    "array_list = np.array(object = list_, dtype = int)\n",
+    "Will there be any difference in the data type of the elements present in both the variables, list_ and\n",
+    "arra_list? If so then print the data types of each and every element present in both the variables, list_\n",
+    "and arra_list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "8174d588-c33a-40c2-a9e3-a58598bd640d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "v_list = [ '1' , '2' , '3' , '4' , '5' ]\n",
+    "array_list = np.array(object = v_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "d44acc71-4b89-4ed4-a44e-11607e2de841",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('<U1')"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "array_list.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "d5d63c2e-aeba-44a8-b87b-4645bfc81137",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "array_list1 = np.array(object =v_list ,dtype = int)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "7d148ab1-b0a1-48bd-bc2e-b5d30c9cac5e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('int64')"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "array_list1.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "3c833b59-b1ad-4af0-8bba-2a4dacbf9ef8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'numpy.ndarray'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(array_list1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "c664ca26-a280-45d6-85ce-ba3163e8a33c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(v_list))"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "ab9616bf-80da-4246-967d-71e2bcb68d74",
+   "metadata": {},
+   "source": [
+    "Q4-import numpy as np\n",
+    "num_list = [ [ 1 , 2 , 3 ] , [ 4 , 5 , 6 ] ]\n",
+    "num_array = np.array(object = num_list)\n",
+    "Q4. Write a code to find the following characteristics of variable, num_array:\n",
+    "(i) shape\n",
+    "(ii) size"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "40fa0581-5b79-445e-8e95-8583f8b70c6b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "num_list = [ [ 1 , 2 , 3 ] , [ 4 , 5 , 6 ] ]\n",
+    "num_array = np.array(object = num_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "68cc9bb5-8beb-4c04-82ff-89f3d7854947",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num_array.size"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "5692a56f-c09a-4d2e-9519-9518fd7cef57",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 3)"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num_array.shape"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "1c26991a-f93f-4224-897c-5b5f1e571ffe",
+   "metadata": {},
+   "source": [
+    "Q5. Write a code to create numpy array of 3*3 matrix containing zeros only, using a numpy array\n",
+    "creation function.\n",
+    "[Hint: The size of the array will be 9 and the shape will be (3,3).]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "3ef5d948-062e-46e4-82c0-c0d40fe55577",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (925726179.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Cell \u001b[0;32mIn[29], line 1\u001b[0;36m\u001b[0m\n\u001b[0;31m    import matrix from metpolite\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "fe4ad0b3-dc63-432d-a72a-9ebb821db585",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "arr1 = np.random.randint(1,9, (3,3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "187058ce-8374-4a19-bca9-f69be7e7754f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(3, 3)"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr1.shape"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "7672db82-0a42-41b9-bcc3-be7b4a6bc6bf",
+   "metadata": {},
+   "source": [
+    "Q6. Create an identity matrix of shape (5,5) using numpy functions?\n",
+    "[Hint: An identity matrix is a matrix containing 1 diagonally and other elements will be 0.]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "452fce94-3b6f-4adf-908b-5c2428579b95",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.random.randint(1,5("
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
